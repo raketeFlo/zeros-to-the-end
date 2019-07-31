@@ -1,0 +1,27 @@
+{
+  "name": "-y",
+  "version": "1.0.0",
+  "description": "- [1. Getting started](#1-getting-started) - [2. Challenge](#2-challenge)   - [2.1. Examples](#21-examples)   - [2.2. Testing your solution](#22-testing-your-solution)   - [2.3. Submitting your solution](#23-submitting-your-solution)",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steelersbcn/zeros-to-the-end.git"
+  },
+  "author": "steelersbcn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/steelersbcn/zeros-to-the-end/issues"
+  },
+  "homepage": "https://github.com/steelersbcn/zeros-to-the-end#readme",
+  "dependencies": {
+    "mocha": "^6.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.2"
+  }
+}
