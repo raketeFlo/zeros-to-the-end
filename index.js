@@ -7,15 +7,21 @@
 
 const moveZeros = (arr) => {
   if (!Array.isArray(arr)) return [];
-  const newArr = [];
-  const zeros = [];
-  arr.forEach((el) => {
-    if (el === 0) zeros.push(0);
-    else newArr.push(el);
-  });
+  const len = arr.length;
+  const newArr = new Array(len);
+  let j = 0;
+  let k = 0;
+  for (let i = 0; i < arr.length; i += 1) {
+    if (arr[i] === 0) {
+      newArr[len - 1 - j] = 0;
+      j += 1;
+    } else {
+      newArr[k] = arr[i];
+      k += 1;
+    }
+  }
 
-  return [...newArr, ...zeros];
-  // add your code here
+  return newArr;
 };
 
 module.exports = moveZeros;
