@@ -1,10 +1,17 @@
 /* eslint-disable no-undef */
 require('chai').should();
+
 const moveZeros = require('./index');
+
 
 describe('moveZeros', () => {
   it('should return an array', () => {
     moveZeros([0, 1]).should.be.a('array');
+  });
+  it('should return an empty array if array is not an array', () => {
+    moveZeros().should.eql([]);
+    moveZeros(null).should.eql([]);
+    moveZeros(0).should.eql([]);
   });
   it('should only move zeros to the end', () => {
     moveZeros([0, 1, 2, 0.0, 1, false, 1, '0', 3, 0, 1]).should.eql([1, 2, 1, false, 1, '0', 3, 1, 0, 0, 0]);
